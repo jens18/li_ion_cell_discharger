@@ -28,7 +28,8 @@
 float shuntRes = 1.0;  // In Ohms - Shunt resistor resistance
 int interval = 5000;  //Interval (ms) between measurements
 // final voltage of a discharged battery (under load)
-float battLow = 2.9;
+// http://lygte-info.dk/info/BatteryLowVoltage%20UK.html
+float battLow = 2.5;
 
 float voltRef = 5.0; // Reference voltage
 unsigned long currentMillis = 0;
@@ -83,7 +84,7 @@ void setup() {
   Serial.print("voltRef: ");
   Serial.println(voltRef);
   
-  Serial.println("battIdx  battVolt   current     mAh");
+  Serial.println("battIdx  battVolt   current     mAh  state");
 
   for( int i = 0; i < numBatt; i++ ) {
     pinMode(batt[i].gatePin, OUTPUT);
@@ -95,7 +96,7 @@ void setup() {
 
 void loop() {
     
-  for(int i = 0; i < 2; i++) {
+  for(int i = 0; i < numBatt; i++) {
     
     b = &batt[i];
     
@@ -117,24 +118,25 @@ void loop() {
       b->current = (b->battVolt - b->shuntVolt) / shuntRes;
       b->mAh = b->mAh + (b->current * 1000.0) * (b->millisPassed / 3600000.0);
       b->previousMillis = currentMillis;
-
-      Serial.print(i);
-      Serial.print("\t");
-      Serial.print(b->battVolt);
-      Serial.print("\t");
-      Serial.print(b->current);
-      Serial.print("\t");
-      Serial.println(b->mAh);
      }
   
     if(b->battVolt < battLow)
     {
+      // turn off discharge circuit
       digitalWrite(b->gatePin, LOW);
     
-      Serial.println("final capacity");
-
       b->finished = true;   
     }
+    
+    Serial.print(i);
+    Serial.print("\t"); 
+    Serial.print(b->battVolt);
+    Serial.print("\t");
+    Serial.print(b->current);
+    Serial.print("\t");
+    Serial.print(b->mAh);
+    Serial.print("\t");
+    Serial.println(b->finished ? "Final Capacity" : "Discharge"  );
   }
   
   delay(interval);
