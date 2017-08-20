@@ -1,5 +1,30 @@
 /* 
+ * Name: 
  * Battery Capacity Checker
+ *
+ * Description:
+ * Discharge 2 Li-Ion cells from >4.1V voltage to 2.5V while record the discharge 
+ * profile and cell capacity. Discharge process can be started by pressing a momentary
+ * push button switch. A red LED lights up to indicate that the discharge process is
+ * still continuing (2.5V cut off has not been reached). 
+ * 
+ * Circuit:
+ * https://goo.gl/photos/qm96asJ2DXB2iUNHA
+ * 
+ * Example:
+ * https://goo.gl/photos/hopcskTPDCRb9MaL8
+ *
+ * Author:
+ * Jens Kaemmerer (jens@mesgtone.net) 
+ *
+ * Credits:
+ * Single cell circuit and source code from:
+ * YouTube Video: https://www.youtube.com/embed/qtws6VSIoYk
+ * http://AdamWelch.Uk
+ */
+
+ 
+ Battery Capacity Checker
  * 
  * Uses 1 Ohm power resister as shunt - Load can be any suitable resister or lamp
  * 
