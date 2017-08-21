@@ -23,17 +23,6 @@
  * http://AdamWelch.Uk
  */
 
- 
- Battery Capacity Checker
- * 
- * Uses 1 Ohm power resister as shunt - Load can be any suitable resister or lamp
- * 
- * YouTube Video: https://www.youtube.com/embed/qtws6VSIoYk
- * 
- * http://AdamWelch.Uk
- * 
- */
-
 #define ledPinBatt1 13
 #define ledPinBatt2 12
 #define ledPinBatt3 11
