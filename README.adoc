@@ -27,9 +27,9 @@ https://goo.gl/photos/qm96asJ2DXB2iUNHA
 
 1500mAh cell:
 
-y-axis blue: cell voltage
-y-axis red: cell capacity
-x-axis: time in seconds
+y-axis blue: cell voltage +
+y-axis red: cell capacity +
+x-axis: time in seconds +
 
 https://goo.gl/photos/hopcskTPDCRb9MaL8
 
