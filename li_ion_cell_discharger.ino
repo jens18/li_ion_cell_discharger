@@ -3,7 +3,7 @@
  * Battery Capacity Checker
  *
  * Description:
- * Discharge 2 Li-Ion cells from >4.1V voltage to 2.5V while record the discharge 
+ * Discharge 2 Li-Ion cells from >4.1V voltage to 2.5V while recording the discharge 
  * profile and cell capacity. Discharge process can be started by pressing a momentary
  * push button switch. A red LED lights up to indicate that the discharge process is
  * still continuing (2.5V cut off has not been reached). 
