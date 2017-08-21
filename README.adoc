@@ -12,9 +12,12 @@ Schema:
 
 image::li_ion_cell_discharger_schem.png[]
 
-Main component:
+Main components:
 
-50A, 50V, 0.022 Ohm, Logic Level, N-Channel Power MOSFET: http://www.mouser.com/ds/2/149/RFP50N05L-189523.pdf[F50N05L]
+* 2x 50A, 50V, 0.022 Ohm, Logic Level, N-Channel Power MOSFET: http://www.mouser.com/ds/2/149/RFP50N05L-189523.pdf[F50N05L]
+* power resistors: 2x Ceramic 1 Ohm, 10 Watt (shunt); 2x Aluminium 3.3 Ohm, 25 Watt (load)
+
+NOTE: Many other N-Channel MOSFET's can be used. 
 
 Breadboard:
 
