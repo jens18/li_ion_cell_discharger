@@ -18,8 +18,7 @@
  * Jens Kaemmerer (jens@mesgtone.net) 
  *
  * Credits:
- * 1) YouTube Video: https://www.youtube.com/embed/qtws6VSIoYk
- * http://AdamWelch.Uk
+ * 1) http://AdamWelch.Uk
  * 2) http://learn.linksprite.com/project/diy-arduino-battery-capacity-tester-v1-0/
  */
 

@@ -35,8 +35,8 @@ https://goo.gl/photos/hopcskTPDCRb9MaL8
 
 == Credits:
 
-Single cell circuit and source code from:
+Single cell circuit:
 
-YouTube Video: https://www.youtube.com/embed/qtws6VSIoYk
+1) http://AdamWelch.Uk
 
-Website: http://AdamWelch.Uk
+2) http://learn.linksprite.com/project/diy-arduino-battery-capacity-tester-v1-0/
