@@ -18,9 +18,9 @@
  * Jens Kaemmerer (jens@mesgtone.net) 
  *
  * Credits:
- * Single cell circuit and source code from:
- * YouTube Video: https://www.youtube.com/embed/qtws6VSIoYk
+ * 1) YouTube Video: https://www.youtube.com/embed/qtws6VSIoYk
  * http://AdamWelch.Uk
+ * 2) http://learn.linksprite.com/project/diy-arduino-battery-capacity-tester-v1-0/
  */
 
 #define ledPinBatt1 13
