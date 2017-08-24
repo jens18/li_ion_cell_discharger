@@ -70,8 +70,7 @@ typedef struct Batt {
   boolean finished;
   unsigned long previousMillis;
   unsigned long millisPassed;
-} 
-Batt;  
+} Batt;  
 
 Batt batt[numBatt] = { 
   { 
